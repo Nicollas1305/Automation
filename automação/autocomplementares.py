@@ -5,19 +5,19 @@ x = 0
 lista = 100
 pyautogui.alert("o código vai começar")
 pyautogui.PAUSE = 0.3
-pyautogui.moveTo(760, 879)     
-pyautogui.click()
+icon_sge = pyautogui.locateOnScreen('./sge.png')
+pyautogui.click(icon_sge)
 
-for x in range(162):   
+for x in range(3):   
     pyautogui.moveTo(538, 151)
     pyautogui.click()
     pyautogui.moveTo(745, 215)
     pyautogui.click()
-    pyautogui.write('Cereal Bom de Gosto')
+    pyautogui.write('SERVIÇO SOCIAL DA INDUSTRIA - SESI')
     pyautogui.press('tab')
     pyautogui.press('tab')
     pyautogui.press('tab')
-    pyautogui.write('08.089.064/0001-12')
+    pyautogui.write('03.777.433/0004-99')
     pyautogui.press('tab')
     pyautogui.press('tab')
     pyautogui.write('cnpj')
@@ -28,7 +28,7 @@ for x in range(162):
     pyautogui.press('tab')
     #pyautogui.moveTo(695, 435)
     #pyautogui.click()
-    pyautogui.write('1')
+    pyautogui.write('5')
     pyautogui.press('tab')
     pyautogui.press('tab')
     pyautogui.press('tab')
